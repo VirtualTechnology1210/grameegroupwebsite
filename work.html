@@ -1,0 +1,199 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Growth By Numbers</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+  <style>
+    body {
+        background: #073763; 
+        text-align: center;
+        color: #fff;
+    }
+
+    .row {
+        margin-top: 70px;
+    }
+
+    .counter {
+        color: #f1c232;
+    }
+
+    div.col-md-2 {
+        border-right: #ddd solid 0.1px;
+    }
+
+    div.col-md-2:last-child {
+        border-right: #ddd solid 0px;
+    }
+    @media only screen and (max-width: 600px) {
+        .row{
+           flex-direction: column;
+        }
+    }
+  </style>
+</head>
+<body>
+  <div class="container-fluid text-center maincontent-main">
+    <div class="row" style="display: flex;
+    justify-content: space-around;">
+      <!-- <h1>Growth By Numbers</h1>
+      <p class="para">We have grown from strength to strength over the past 20 years</p> -->
+      
+      <div class="col-lg-2 col-md-offset-12" >
+        <h1><span class="counter" data-num="5">5</span></h1>
+        <p>No of districts</p>
+      </div>
+      
+      <div class="col-lg-2" >
+        <h1><span class="counter" data-num="10">10</span></h1>
+        <p>No of Branches</p>
+      </div>
+      
+      <div class="col-lg-2">
+        <h1><span class="counter" data-num="45">45</span></h1>
+        <p>No of staffs</p>
+      </div>
+      
+      <div class="col-lg-2" >
+        <h1><span class="counter" data-num="12000">0</span></h1>
+        <p>No of members</p>
+      </div>
+      <div class="col-lg-2" >
+        <h1><span class="counter" data-num="45">45</span></span> crs</span></h1>
+        <p>Amt of Loan disbursement</p>
+      </div>
+      
+      <div class="col-lg-2" >
+        <h1><span class="counter" data-num="9.9">9.9</span></span> crs</span></h1>
+        <p>Loan OS</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- jQuery Library -->
+  <script src="jquery.counterup.min.js"></script> <!-- CounterUp Plugin -->
+  
+  <script>
+   $(document).ready(function() {
+    $('.counter').each(function() {
+        var $this = $(this);
+        var targetNum = parseFloat($this.attr('data-num'));
+        var startNum = 0;
+
+        var interval = setInterval(function() {
+            startNum += targetNum === 12000 ? 250 : 1; // Increase by 1000 if target is 12000, else by 1
+            $this.text(startNum);
+
+            if (startNum >= targetNum) {
+                clearInterval(interval);
+                $this.text(targetNum); // Ensure the target number is displayed accurately
+            }
+        }, 40); // Adjust speed as needed (in milliseconds)
+    });
+});
+  </script>
+</body>
+</html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Growth By Numbers</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+  <style>
+    body {
+        background: #073763; 
+        text-align: center;
+        color: #fff;
+    }
+
+    .row {
+        margin-top: 70px;
+    }
+
+    .counter {
+        color: #f1c232;
+    }
+
+    div.col-md-2 {
+        border-right: #ddd solid 0.1px;
+    }
+
+    div.col-md-2:last-child {
+        border-right: #ddd solid 0px;
+    }
+    @media only screen and (max-width: 600px) {
+        .row{
+           flex-direction: column;
+        }
+    }
+  </style>
+</head>
+<body>
+  <div class="container-fluid text-center maincontent-main">
+    <div class="row" style="display: flex;
+    justify-content: space-around;">
+      <!-- <h1>Growth By Numbers</h1>
+      <p class="para">We have grown from strength to strength over the past 20 years</p> -->
+      
+      <div class="col-lg-2 col-md-offset-12" >
+        <h1><span class="counter" data-num="5">5</span></h1>
+        <p>No of districts</p>
+      </div>
+      
+      <div class="col-lg-2" >
+        <h1><span class="counter" data-num="10">10</span></h1>
+        <p>No of Branches</p>
+      </div>
+      
+      <div class="col-lg-2">
+        <h1><span class="counter" data-num="45">45</span></h1>
+        <p>No of staffs</p>
+      </div>
+      
+      <div class="col-lg-2" >
+        <h1><span class="counter" data-num="12000">0</span></h1>
+        <p>No of members</p>
+      </div>
+      <div class="col-lg-2" >
+        <h1><span class="counter" data-num="45">45</span></span> crs</span></h1>
+        <p>Amt of Loan disbursement</p>
+      </div>
+      
+      <div class="col-lg-2" >
+        <h1><span class="counter" data-num="9.9">9.9</span></span> crs</span></h1>
+        <p>Loan OS</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- jQuery Library -->
+  <script src="jquery.counterup.min.js"></script> <!-- CounterUp Plugin -->
+  
+  <script>
+   $(document).ready(function() {
+    $('.counter').each(function() {
+        var $this = $(this);
+        var targetNum = parseFloat($this.attr('data-num'));
+        var startNum = 0;
+
+        var interval = setInterval(function() {
+            startNum += targetNum === 12000 ? 250 : 1; // Increase by 1000 if target is 12000, else by 1
+            $this.text(startNum);
+
+            if (startNum >= targetNum) {
+                clearInterval(interval);
+                $this.text(targetNum); // Ensure the target number is displayed accurately
+            }
+        }, 40); // Adjust speed as needed (in milliseconds)
+    });
+});
+  </script>
+</body>
+</html>
+>>>>>>> 240664b (grameengroupwebsite)
